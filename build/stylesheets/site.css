@@ -1,0 +1,15 @@
+@import url(vendors/bootstrap/bootstrap.css);
+body {
+  background-color: #e7e7e7;
+  color: #333;
+  font-family: "Roboto", \5FAE\8EDF\6B63\9ED1\9AD4 "PingFangTC-Light", "Lantinghei TC", "Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  text-align: center; }
+
+a {
+  color: rgba(0, 0, 0, 0.7); }
+  a:focus, a:hover {
+    color: rgba(0, 0, 0, 0.6); }
+
+.middleman-logo {
+  margin-bottom: 1rem;
+  width: 10rem; }
