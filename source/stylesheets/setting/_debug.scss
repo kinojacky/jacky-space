@@ -1,0 +1,63 @@
+$debug-css:                 false !default;
+$debug-css-block:           false !default;
+$debug-css-show-class-name: false !default;
+$debug-css-text-font-size:  10px !default;
+
+@if $debug-css {
+  div, label, canvas, dl {
+    outline: 1px dashed fade-out(chartreuse, .2);
+  }
+
+  svg {
+    outline: 1px dashed fade-out(blue, .2);
+  }
+
+  li, dd, dt {
+    outline: 1px dashed fade-out(yellow, .2);
+  }
+
+  img {
+    outline: 1px dashed fade-out(orange, .5);
+  }
+
+  input {
+    outline: 1px dotted red;
+  }
+
+  table {
+    outline: 1px dashed fade-out(pink, 0.3);
+  }
+
+  th, td {
+    outline: 1px dashed rgba(255, 0, 0, 0.3);
+  }
+
+  a {
+    outline: 1px dashed fade-out(red, 0.3);
+  }
+
+  h2 {
+    outline: 1px dashed fade-out(red, 0.5);
+  }
+
+  span {
+    outline: 1px dashed fade-out(red, 0.7);
+  }
+}
+
+@if $debug-css-show-class-name {
+  div:after {
+    color: fade-out(red, 0.7);
+    font-size: $debug-css-text-font-size;
+    width: 100%;
+    content: attr(class);
+    position: absolute;
+  }
+}
+
+@mixin test-color($color: gray, $opacity: .2) {
+  @if $debug-css-block {
+    $fade-out: 1 - $opacity;
+    background-color: fade-out($color, $fade-out);
+  }
+}
