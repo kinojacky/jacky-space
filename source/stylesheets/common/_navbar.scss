@@ -1,9 +1,22 @@
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
+.navbar {
+  letter-spacing: 2px;
 
-.navbar .navbar-collapse {
-  text-align: center;
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+
+    .nav > li > a {
+      width: 110px;
+
+      &:hover, &focus {
+        font-weight: bold;
+        background-color: inherit;
+      }
+    }
+  }
 }
