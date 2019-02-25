@@ -1,9 +1,12 @@
 @import url(vendors/bootstrap/bootstrap.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
 body {
   background-color: #e7e7e7;
   color: #333;
-  font-family: "Roboto", \5FAE\8EDF\6B63\9ED1\9AD4 "PingFangTC-Light", "Lantinghei TC", "Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
-  text-align: center; }
+  font-family: "Roboto", \5FAE\8EDF\6B63\9ED1\9AD4, "PingFangTC-Light", "Lantinghei TC", "Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 a {
   color: rgba(0, 0, 0, 0.7); }
@@ -13,3 +16,26 @@ a {
 .middleman-logo {
   margin-bottom: 1rem;
   width: 10rem; }
+
+.wrapper > .title-show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .wrapper > .title-show h1, .wrapper > .title-show h3 {
+    font-weight: 300; }
+
+.navbar {
+  letter-spacing: 2px; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  .navbar .navbar-collapse {
+    text-align: center; }
+    .navbar .navbar-collapse .nav > li > a {
+      width: 110px; }
+      .navbar .navbar-collapse .nav > li > a:hover, .navbar .navbar-collapse .nav > li > afocus {
+        font-weight: bold;
+        background-color: inherit; }
