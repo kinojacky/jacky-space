@@ -1,5 +1,7 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
+# activate :directory_indexes
+activate :sprockets
 
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
@@ -50,6 +52,3 @@ configure :build do
 #   activate :minify_css
 #   activate :minify_javascript
 end
-
-# activate :directory_indexes
-activate :sprockets
