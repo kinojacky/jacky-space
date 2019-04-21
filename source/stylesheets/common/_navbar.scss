@@ -1,16 +1,10 @@
 .navbar {
   letter-spacing: 2px;
 
-  .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-
   .navbar-collapse {
     text-align: center;
 
-    .nav > li > a {
+    .nav-item a {
       width: 110px;
 
       &:hover, &focus {
