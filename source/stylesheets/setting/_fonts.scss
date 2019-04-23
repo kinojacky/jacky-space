@@ -1,7 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 $microsoft-jheng-hei: \5FAE\8EDF\6B63\9ED1\9AD4;
 $us-default-font: 'Roboto';
-$zh-default-font: $us-default-font, $microsoft-jheng-hei,
-                  "PingFangTC-Light", "Lantinghei TC", "Helvetica Neue",
-                  Helvetica, "Microsoft Yahei","Hiragino Sans GB", sans-serif;
+$default-font:
+  // Common Default
+  $us-default-font,
+  // Windows Chinese default
+  $microsoft-jheng-hei,
+  // macOS Chinese Default
+  "PingFangTC-Light",
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;

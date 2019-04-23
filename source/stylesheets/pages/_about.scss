@@ -1,0 +1,37 @@
+#about {
+  padding-top: 150px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   text-align: center;
+  .name-card {
+    letter-spacing: 2px;
+  }
+
+  .text > p {
+    line-height: 2rem;
+
+    a {
+      &:link,
+      &:visited {
+        color: rgba(174, 0, 227, 1);
+        font-weight: 400;
+
+        span {
+          border-bottom: 1px solid rgba(174, 0, 227, 1);
+        }
+      }
+
+      &:focus,
+      &:hover {
+        color: rgba(174, 0, 227, 1);
+        text-decoration: none;
+
+        span {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

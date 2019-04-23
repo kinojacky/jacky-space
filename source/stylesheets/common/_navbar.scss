@@ -1,15 +1,23 @@
 .navbar {
   letter-spacing: 2px;
+  background-color: #f2f2f2;
 
   .navbar-collapse {
     text-align: center;
 
     .nav-item a {
-      width: 110px;
+      width: 150px;
 
-      &:hover, &focus {
-        font-weight: bold;
+      &:hover,
+      &:focus,
+      &.active {
+        font-weight: 400;
         background-color: inherit;
+
+        span {
+          border-top: 2px solid #bfbfbf;
+          padding-top: 3px;
+        }
       }
     }
   }

@@ -1,21 +1,23 @@
-<nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarResponsive">
-    <ul class="navbar-nav text-uppercase m-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resume.html">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="works.html">Works</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<header>
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase m-auto">
+        <li class="nav-item">
+          <a class="nav-link <%= nav_active 'about.html' %>" href="about.html"><span>About</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= nav_active 'resume.html' %>" href="resume.html"><span>Resume</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= nav_active 'works.html' %>" href="works.html"><span>Works</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%= nav_active 'contact.html' %>" href="contact.html"><span>Contact</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

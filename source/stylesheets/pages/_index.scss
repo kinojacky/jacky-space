@@ -1,8 +1,16 @@
-.wrapper > .title-show {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#home {
+  padding-top: 150px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   text-align: center;
+  .name-card {
+    letter-spacing: 2px;
 
-  h1, h3 { font-weight: 300 }
+    p > span {
+      border-left: 1px solid #333333;
+      margin: 0 12px;
+    }
+  }
 }
