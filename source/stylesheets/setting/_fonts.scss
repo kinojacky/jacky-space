@@ -24,6 +24,8 @@ $default-font:
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
 // Material Web Icon font set
+// Fix align with text
+.fas, .far, .fab, .material-icons { vertical-align: middle; }
 // Rules for sizing the icon.
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
