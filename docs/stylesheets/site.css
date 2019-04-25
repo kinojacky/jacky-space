@@ -1,46 +1,99 @@
 @import url(vendors/animate/animate.css);
 @import url(vendors/bootstrap/bootstrap.css);
-@import url(vendors/font-awesome/font-awesome.css);
-@import url(vendors/ionicons/ionicons.css);
 @import url(vendors/lightbox/lightbox.css);
 @import url(vendors/owlcarousel/owl.carousel.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.fas, .far, .fab, .material-icons {
+  vertical-align: middle; }
+
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-24 {
+  font-size: 24px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light {
+  color: white; }
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
+
 body {
-  background-color: #e7e7e7;
-  color: #333;
-  font-family: "Roboto", \5FAE\8EDF\6B63\9ED1\9AD4, "PingFangTC-Light", "Lantinghei TC", "Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
-  text-align: center;
+  background-color: #f2f2f2;
+  color: #333333;
+  font-family: "Roboto", \5FAE\8EDF\6B63\9ED1\9AD4, "PingFangTC-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
   padding-top: 20px;
   padding-bottom: 20px; }
 
-a {
+a:link, a:visited {
   color: rgba(0, 0, 0, 0.7); }
-  a:focus, a:hover {
-    color: rgba(0, 0, 0, 0.6); }
+a:focus, a:hover {
+  color: rgba(0, 0, 0, 0.6); }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem; }
+.name-card {
+  letter-spacing: 2px; }
+  .name-card p > span {
+    border-left: 1px solid #333333;
+    margin: 0 12px; }
 
-.wrapper > .title-show {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-  .wrapper > .title-show h1, .wrapper > .title-show h3 {
-    font-weight: 300; }
+#home {
+  padding-top: 200px; }
+
+#about {
+  padding-top: 100px; }
+  #about .text > p {
+    line-height: 2rem; }
+    #about .text > p a:link, #about .text > p a:visited {
+      color: #ae00e3;
+      font-weight: 400; }
+      #about .text > p a:link span, #about .text > p a:visited span {
+        border-bottom: 1px solid #ae00e3; }
+    #about .text > p a:focus, #about .text > p a:hover {
+      color: #ae00e3;
+      text-decoration: none; }
+      #about .text > p a:focus span, #about .text > p a:hover span {
+        border-bottom: 0; }
+  #about .text-icon > i {
+    margin-right: 10px;
+    font-size: 25px;
+    color: #b0b0b0; }
+  #about .text-icon > i:last-child {
+    margin-right: 0px; }
+
+#resume {
+  padding-top: 100px; }
+
+#work {
+  padding-top: 100px; }
+
+#contact {
+  padding-top: 100px; }
 
 .navbar {
-  letter-spacing: 2px; }
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top; }
+  letter-spacing: 2px;
+  background-color: #f2f2f2; }
   .navbar .navbar-collapse {
     text-align: center; }
-    .navbar .navbar-collapse .nav > li > a {
-      width: 110px; }
-      .navbar .navbar-collapse .nav > li > a:hover, .navbar .navbar-collapse .nav > li > afocus {
-        font-weight: bold;
+    .navbar .navbar-collapse .nav-item a {
+      width: 150px; }
+      .navbar .navbar-collapse .nav-item a:hover, .navbar .navbar-collapse .nav-item a:focus, .navbar .navbar-collapse .nav-item a.active {
+        font-weight: 400;
         background-color: inherit; }
+        .navbar .navbar-collapse .nav-item a:hover span, .navbar .navbar-collapse .nav-item a:focus span, .navbar .navbar-collapse .nav-item a.active span {
+          border-top: 2px solid #bfbfbf;
+          padding-top: 3px; }
