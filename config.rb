@@ -43,9 +43,9 @@ end
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 # Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
-end
+# configure :development do
+#   activate :livereload
+# end
 
 configure :build do
     activate :relative_assets
