@@ -20,4 +20,42 @@
       </ul>
     </div>
   </nav>
+
+  <!-- Navigation with fullscreen overlay -->
+  <nav id="mainNav" class="navbar navbar-light fixed-top">
+    <div class="container justify-content-center">
+      <div class="navbar-brand"><%= current_page.data.title %></div>
+
+      <div class="navbar-toggler" onclick="openNav()">
+        <i class="material-icons md-36">menu</i>
+      </div>
+
+      <a href="/" class="navbar-toggler-home">
+        <i class="material-icons md-36">home</i>
+      </a>
+
+      <div id="overlayNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="material-icons md-36">close</i>
+        </a>
+
+        <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center">
+            <a class="nav-link <%= nav_active 'about.html' %>" href="about.html">
+              <span>About</span>
+            </a>
+            <a class="nav-link <%= nav_active 'resume.html' %>" href="resume.html">
+              <span>Resume</span>
+            </a>
+            <a class="nav-link <%= nav_active 'work.html' %>" href="work.html">
+              <span>Work</span>
+            </a>
+            <a class="nav-link <%= nav_active 'contact.html' %>" href="contact.html">
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>

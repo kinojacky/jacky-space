@@ -1,4 +1,15 @@
-// This is where it all goes :)
+// Control nav-menu-bar open
+function openNav() {
+  document.getElementById("overlayNav").style.visibility = "visible";
+  document.getElementById("overlayNav").style.opacity = "1";
+}
+
+// Control nav-menu-bar close
+function closeNav() {
+  document.getElementById("overlayNav").style.visibility = "hidden";
+  document.getElementById("overlayNav").style.opacity = "0";
+}
+
 // (function ($) {
 //   "use strict";
 //
