@@ -10,9 +10,11 @@ function closeNav() {
   document.getElementById("overlayNav").style.opacity = "0";
 }
 
-// (function ($) {
-//   "use strict";
-//
+(function ($) {
+  "use strict";
+
+  $('[data-toggle="tooltip"]').tooltip()
+  
 //   // Preloader (if the #preloader div exists)
 //   $(window).on('load', function () {
 //     if ($('#preloader').length) {
@@ -131,4 +133,4 @@ function closeNav() {
 //     items: 1
 //   });
 //
-// })(jQuery);
+})(jQuery);

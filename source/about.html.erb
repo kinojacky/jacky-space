@@ -8,15 +8,19 @@ title: jacky.space | about
       <div class="col-md-8 text-center d-flex align-items-center justify-content-center">
         <div class="name-card">
           <h1 class="display-4">Jacky Kiu</h1>
-          <p class="text-uppercase">web developer<span></span>UI / UX designer<br>
-            <small>Singapore</small></p>
+          <div class="text-uppercase mb-2">
+            <span class="front-text">web developer</span>
+            <span class="middleline">&nbsp;</span>
+            <span class="back-text">UI / UX designer</span><br>
+            <small>Singapore</small>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row justify-content-center mt-5">
       <div class="col-md-3 text-center mb-5">
-        <img src="images/noprofile.jpg" alt="no profile image" class="rounded-circle" style="width:200px">
+        <img src="images/noprofile.jpg" alt="no profile image" class="img-fluid rounded-circle" style="width:200px">
       </div>
 
       <div class="col-md-5 text-center text-md-left d-flex align-items-center">
@@ -30,22 +34,28 @@ title: jacky.space | about
     </div>
 
     <div class="row justify-content-center my-5">
-      <div class="col-8 text-center">
+      <div class="col-12 text-center">
         <div class="text-icon">
-          <i class="material-icons">favorite</i>
-          <i class="material-icons">arrow_forward</i>
+          <span data-toggle="tooltip" data-placement="top" title="Love with"><i class="material-icons">favorite</i></span>
+          <span><i class="material-icons">arrow_forward</i></span>
           <!-- Photograpy -->
-          <i class="fas fa-camera-retro"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Photograpy"><i class="fas fa-camera-retro"></i></span>
           <!-- Film photograh -->
-          <i class="fas fa-film"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Film Lover"><i class="fas fa-film"></i></span>
           <!-- Travel -->
-          <i class="fas fa-route"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Travel"><i class="fas fa-route"></i></span>
           <!-- Watch Movies -->
-          <i class="fas fa-ticket-alt"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Watch Movies"><i class="fas fa-ticket-alt"></i></span>
           <!-- Starwars Fans -->
-          <i class="fas fa-jedi"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Starwars Fan"><i class="fas fa-jedi"></i></span>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>

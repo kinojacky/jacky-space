@@ -1,7 +1,7 @@
 <!-- Navigation with fullscreen overlay -->
-<nav id="mainNav" class="navbar navbar-light fixed-top">
-  <div class="container navbar-desktop">
-    <ul class="nav text-uppercase m-auto">
+<nav id="mainNav" class="navbar fixed-top">
+  <div class="container navbar-desktop d-md-flex d-none">
+    <ul class="nav text-uppercase text-center m-auto">
       <li class="nav-item">
         <a class="nav-link <%= nav_active 'about.html' %>" href="about.html"><span>About</span></a>
       </li>
@@ -17,8 +17,8 @@
     </ul>
   </div>
 
-  <div class="container navbar-mobile justify-content-center">
-    <div class="navbar-toggler" onclick="openNav()">
+  <div class="container-fluid navbar-mobile d-block d-md-none justify-content-end px-0">
+    <div class="navbar-toggler text-right px-0" onclick="openNav()">
       <i class="material-icons">menu</i>
     </div>
 
@@ -29,7 +29,6 @@
 
       <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center">
-
           <ul class="navbar-nav text-uppercase text-center m-auto">
             <li class="nav-item">
               <a class="nav-link <%= nav_active 'about.html' %>" href="about.html"><span>About</span></a>
@@ -44,7 +43,6 @@
               <a class="nav-link <%= nav_active 'contact.html' %>" href="contact.html"><span>Contact</span></a>
             </li>
           </ul>
-
         </div>
       </div>
     </div>
