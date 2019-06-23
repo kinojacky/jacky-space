@@ -1,16 +1,3 @@
-.name-card {
-  letter-spacing: 2px;
-
-  .front-text,
-  .back-text {
-    display: block;
-  }
-
-  .middleline {
-    display: none;
-  }
-}
-
 #preloader {
   position: fixed;
   left: 0;
@@ -20,21 +7,4 @@
   height: 100%;
   overflow: visible;
   background: #c2c2c2 url("../images/preloader.gif") no-repeat center center;
-}
-
-@media(min-width: 540px) {
-  .name-card {
-
-    .front-text,
-    .back-text {
-      display: inline-block;
-    }
-
-    .middleline {
-      display: inline-block;
-      border-left: 1px solid #333333;
-      margin-left: 12px;
-      margin-right: 8px;
-    }
-  }
 }
