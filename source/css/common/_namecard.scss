@@ -1,5 +1,5 @@
 .name-card {
-  letter-spacing: 2px;
+  width: 100%;
 
   .name-title {
     font-size: 2.5rem;
@@ -16,6 +16,65 @@
     display: none;
   }
 }
+
+// Animated Title
+.cd-intro {
+  .cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+
+    b {
+      display: inline-block;
+      position: absolute;
+      white-space: nowrap;
+      font-weight: 400;
+      left: 0;
+      top: 0;
+    }
+
+    b.is-visible {
+      position: relative;
+    }
+  }
+
+  .no-js .cd-words-wrapper b {
+    opacity: 0;
+  }
+
+  .no-js .cd-words-wrapper b.is-visible {
+    opacity: 1;
+  }
+
+  .cd-headline.clip span {
+    display: inline-block;
+    padding: 0.2em 0;
+  }
+
+  .cd-headline.clip .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+  .cd-headline.clip .cd-words-wrapper::after {
+    /* line */
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 2px;
+    height: 80%;
+    background-color: #333333;
+  }
+
+  .cd-headline.clip b {
+    opacity: 0;
+  }
+
+  .cd-headline.clip b.is-visible {
+    opacity: 1;
+  }
+}
+
 
 @media(min-width: 540px) {
   .name-card {
