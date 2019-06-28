@@ -8,11 +8,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta name="keywords" content="jacky-space, web designer, web design, system design, ui designer, design engineer, web developer">
-<meta name="description" content="">
+<meta name="description" content="My name is Jacky Kiu, and I'm an design engineer at Ekkko Systems on the Platform Design Engineering team. I'm working to build a user friendly, fun and simplicity web interface. If you are, too, get in touch.">
 <meta name="copyright" content="Copyright (c) by JackySpace 2019">
 <meta name="author" content="kinojacky">
 <meta name="publisher" content="JackySpace">
-<meta name="distribution" content="Malaysia, Taiwan, Singapore">
 <meta name="generator" content="minimum-x v1.0.1">
 
 <meta name="renderer" content="webkit">
@@ -23,15 +22,13 @@
 <meta name="robots" content="none">
 
 <meta name="apple-mobile-web-app-title" content="Jacky's Space">
-<link rel="apple-touch-icon" href="images/favorite/apple-icon-180x180.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favorite/apple-icon-180x180.png">
 <link rel="apple-touch-startup-image" href="images/favorite/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="images/favorite/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favorite/favicon-32x32.png">
-<link rel="icon shortcut" href="images/favorite/favicon-32x32.png">
+<link rel="apple-touch-icon" href="images/favorite/apple-icon-180x180.png">
+<link rel="icon" href="images/favorite/android-icon-192x192.png">
+<link rel="icon" href="images/favorite/favicon-32x32.png">
 
-<link href="stylesheets/site.css" rel="stylesheet" />
-<script src="javascripts/vendors.js"></script>
+<link href="css/site.css" rel="stylesheet" />
+<script src="js/vendors.js"></script>
 
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -39,45 +36,92 @@
 <![endif]-->
 </head>
 <body>
-<header>
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-light fixed-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav text-uppercase m-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="about.html"><span>About</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  " href="resume.html"><span>Resume</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  " href="work.html"><span>Work</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  " href="contact.html"><span>Contact</span></a>
-        </li>
-      </ul>
+
+<!--Pre-Loader-->
+<div id="preloader">
+  <div class="d-flex h-100 align-items-center justify-content-center">
+    <i class="fas fa-yin-yang fa-spin fa-2x text-white"></i>
+  </div>
+</div>
+
+<!-- Navigation with fullscreen overlay -->
+<nav id="mainNav" class="navbar fixed-top">
+  <div class="container navbar-desktop d-md-flex d-none">
+    <ul class="nav text-uppercase text-center m-auto">
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html"><span>About</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="resume.html"><span>Resume</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="work.html"><span>Work</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  " href="contact.html"><span>Contact</span></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container-fluid navbar-mobile d-block d-md-none justify-content-end px-0">
+    <div class="navbar-toggler text-right px-0" onclick="openNav()">
+      <i class="material-icons">menu</i>
     </div>
-  </nav>
-</header>
+
+    <div id="overlayNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="material-icons">close</i>
+      </a>
+
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+          <ul class="navbar-nav text-uppercase text-center m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html"><span>About</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="resume.html"><span>Resume</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="work.html"><span>Work</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " href="contact.html"><span>Contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <section id="about">
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center d-flex align-items-center justify-content-center">
         <div class="name-card">
-          <h1 class="display-4">Jacky Kiu</h1>
-          <p class="text-uppercase">web developer<span></span>UI / UX designer<br>
-            <small>Singapore</small></p>
-        </div>
+  <h1 class="name-title">Jacky Kiu</h1>
+  <div class="cd-intro">
+    <h4 class="cd-headline clip">
+      <span class="cd-words-wrapper">
+        <b class="is-visible">Web Designer</b>
+        <b>UI / UX Designer</b>
+        <b>Front End Web Developer</b>
+        <b>UI Design Engineer</b>
+      </span>
+    </h4>
+  </div>
+  <div class="text-uppercase mb-2">
+    <small>Singapore</small>
+  </div>
+</div>
+
       </div>
     </div>
 
     <div class="row justify-content-center mt-5">
       <div class="col-md-3 text-center mb-5">
-        <img src="images/noprofile.jpg" alt="no profile image" class="rounded-circle" style="width:200px">
+        <img src="images/noprofile.jpg" alt="no profile image" class="img-fluid rounded-circle" style="width:200px">
       </div>
 
       <div class="col-md-5 text-center text-md-left d-flex align-items-center">
@@ -91,27 +135,33 @@
     </div>
 
     <div class="row justify-content-center my-5">
-      <div class="col-8 text-center">
+      <div class="col-12 text-center">
         <div class="text-icon">
-          <i class="material-icons">favorite</i>
-          <i class="material-icons">arrow_forward</i>
+          <span data-toggle="tooltip" data-placement="top" title="Love with"><i class="material-icons">favorite</i></span>
+          <span><i class="material-icons">arrow_forward</i></span>
           <!-- Photograpy -->
-          <i class="fas fa-camera-retro"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Photograpy"><i class="fas fa-camera-retro"></i></span>
           <!-- Film photograh -->
-          <i class="fas fa-film"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Film Lover"><i class="fas fa-film"></i></span>
           <!-- Travel -->
-          <i class="fas fa-route"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Travel"><i class="fas fa-route"></i></span>
           <!-- Watch Movies -->
-          <i class="fas fa-ticket-alt"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Watch Movies"><i class="fas fa-ticket-alt"></i></span>
           <!-- Starwars Fans -->
-          <i class="fas fa-jedi"></i>
+          <span data-toggle="tooltip" data-placement="top" title="Starwars Fan"><i class="fas fa-jedi"></i></span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 
-<script src="javascripts/site.js"></script>
+
+<script src="js/site.js"></script>
 </body>
 </html>
