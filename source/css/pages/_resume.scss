@@ -1,4 +1,39 @@
 #resume {
   padding-top: 100px;
-  
+
+  .title {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  .experience-group {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .company-icon {
+      margin-right: 10px;
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    .company-title {
+
+      .company {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .job-description {
+    margin-left: 25px;
+
+    .working-date {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }
 }
