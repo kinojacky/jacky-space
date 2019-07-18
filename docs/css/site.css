@@ -34,7 +34,7 @@
   color: rgba(255, 255, 255, 0.3); }
 
 body {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   color: #333333;
   font-family: "Roboto", \5FAE\8EDF\6B63\9ED1\9AD4, "PingFangTC-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300;
@@ -82,6 +82,25 @@ a:focus, a:hover {
 
 #resume {
   padding-top: 100px; }
+  #resume .title {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  #resume .experience-group {
+    margin-top: 30px;
+    margin-bottom: 10px; }
+    #resume .experience-group .company-icon {
+      margin-right: 10px; }
+      #resume .experience-group .company-icon img {
+        width: 45px;
+        height: 45px; }
+    #resume .experience-group .company-title .company {
+      font-weight: bold; }
+  #resume .job-description {
+    margin-left: 25px; }
+    #resume .job-description .working-date {
+      font-size: 0.9rem;
+      font-weight: bold; }
 
 #work {
   padding-top: 100px;
@@ -407,7 +426,7 @@ a:focus, a:hover {
 
 #mainNav {
   letter-spacing: 2px;
-  background-color: #f2f2f2; }
+  background-color: #ffffff; }
   #mainNav .navbar-mobile .overlay {
     height: 100%;
     width: 100%;
