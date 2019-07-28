@@ -252,7 +252,6 @@ a:focus, a:hover {
     #work figure figcaption {
       padding: 1.0em;
       color: #ffffff;
-      text-transform: uppercase;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       position: absolute;
@@ -276,7 +275,6 @@ a:focus, a:hover {
         width: 100%;
         height: 100%; }
     #work figure h3 {
-      word-spacing: -0.15em;
       margin: 0; }
     #work figure p {
       margin: 0;
@@ -337,7 +335,6 @@ a:focus, a:hover {
       transition: transform 3.5s;
       transition: transform 3.5s, -webkit-transform 3.5s;
       color: #ffffff;
-      text-transform: uppercase;
       font-size: 21px;
       opacity: 0;
       -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
