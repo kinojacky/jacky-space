@@ -14,10 +14,12 @@
 <meta name="publisher" content="JackySpace">
 <meta name="generator" content="minimum-x v1.0.1">
 
-<meta property="og:title" content="Jacky's Space" />
-<meta property="og:description" content="My name is Jacky Kiu, and I'm an design engineer at Ekkko Systems on the Platform Design Engineering team. I'm working to build a user friendly, fun and simplicity web interface. If you are, too, get in touch." />
-<meta property="og:url" content="https://jacky.space" />
-<meta property="og:image" content="https://jacky.space/images/mainpage_thumbnail.png" />
+<meta property="og:title" content="Jacky's Personal Portfolio">
+<meta property="og:site_name" content="Jacky's Space">
+<meta property="og:url" content="http://jacky.space">
+<meta property="og:description" content="I'm an Interface Design Engineer at Ekkko Systems on the Platform Design team. I'm working to build a user friendly, fun and simplicity web interface.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://jacky.space/images/mainpage_thumbnail.png">
 
 <meta name="renderer" content="webkit">
 <meta name="format-detection" content="telephone=no">
@@ -26,9 +28,23 @@
 
 <meta name="robots" content="none">
 
+<!-- iOS web app icon set -->
 <meta name="apple-mobile-web-app-title" content="Jacky's Space">
-<link rel="apple-touch-icon" href="images/favicons/apple-icon.png">
-<link rel="icon" href="images/favicons/favicon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-startup-image" href="images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+
+<!-- Android web app icon set -->
+<link rel="manifest" href="manifest.json">
+<script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.9/pwacompat.min.js"
+    integrity="sha384-VcI6S+HIsE80FVM1jgbd6WDFhzKYA0PecD/LcIyMQpT4fMJdijBh0I7Iblaacawc"
+    crossorigin="anonymous"></script>
+
+<!-- Default web icon set -->
+<link rel="icon shortcut" href="images/favicons/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
 
 <%= stylesheet_link_tag "site" %>
 <%= javascript_include_tag "vendors" %>

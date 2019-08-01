@@ -1,0 +1,21 @@
+{
+  "short_name": "Jacky's Space",
+  "name": "Jacky's Space",
+  "icons": [
+    {
+      "src": "/images/favicons/icons-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/favicons/icons-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#a4a4a4",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#9c27b0"
+}
