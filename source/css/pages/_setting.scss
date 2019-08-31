@@ -1,3 +1,27 @@
 #setting {
   padding-top: 100px;
 }
+
+// Darkmode control
+body.darkmode {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+
+
+  a {
+    &:link,
+    &:visited {
+      color: rgba(#e7e7e7, 0.7) !important;
+    }
+
+    &:focus,
+    &:hover {
+      color: rgba(#e7e7e7, 0.6) !important;
+    }
+  }
+}
+
+#mainNav.darkmode {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
