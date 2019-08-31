@@ -10,11 +10,11 @@ body {
 a {
   &:link,
   &:visited {
-    color: rgba(#000, 0.7);
+    color: rgba(#000000, 0.7);
   }
 
   &:focus,
   &:hover {
-    color: rgba(#000, 0.6);
+    color: rgba(#000000, 0.6);
   }
 }

@@ -1,19 +1,16 @@
-// Control nav-menu-bar open
-function openNav() {
-  document.getElementById("overlayNav").style.visibility = "visible";
-  document.getElementById("overlayNav").style.opacity = "1";
-}
-
-// Control nav-menu-bar close
-function closeNav() {
-  document.getElementById("overlayNav").style.visibility = "hidden";
-  document.getElementById("overlayNav").style.opacity = "0";
-}
-
-(function ($) {
-  "use strict";
-
-  $('[data-toggle="tooltip"]').tooltip()
+$(document).ready(function() {
+  // Darkmode control
+  if (document.cookie.indexOf("darkmode=on") == 0) {
+    $("#darkModeStatus").html("Activated");
+    $("body").addClass("darkmode");
+    $("#mainNav").addClass("darkmode");
+  } else if (document.cookie.indexOf("darkmode=off") == 0 ) {
+    $("#darkModeStatus").html("Deactivated");
+    $("body").removeClass("darkmode");
+    $("#mainNav").removeClass("darkmode");
+  } else {
+    $("#darkModeStatus").html("Deactivated");
+  }
 
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
@@ -32,6 +29,39 @@ function closeNav() {
         $('#image-cache').append(img);
     });
   });
+});
+
+// Control nav-menu-bar open
+function openNav() {
+  document.getElementById("overlayNav").style.visibility = "visible";
+  document.getElementById("overlayNav").style.opacity = "1";
+}
+
+// Control nav-menu-bar close
+function closeNav() {
+  document.getElementById("overlayNav").style.visibility = "hidden";
+  document.getElementById("overlayNav").style.opacity = "0";
+}
+
+// Darkmode control
+function darkmode(switchAction) {
+  switch (switchAction) {
+    case 1:
+      expiry = new Date();
+      expiry.setDate(expiry.getDate()+(1));
+
+      document.cookie = "darkmode=on; expires=" + expiry.toGMTString();
+    break;
+    case 2:
+      document.cookie = "darkmode=off;expires=Wed; 01 Jan 1970";
+    break;
+  }
+};
+
+(function ($) {
+  "use strict";
+
+  $('[data-toggle="tooltip"]').tooltip();
 
   /* Animated Title */
   (function() {
