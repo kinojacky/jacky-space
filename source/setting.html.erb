@@ -1,0 +1,52 @@
+---
+title: jacky.space | setting
+---
+
+<section id="about">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <div id="darkModeStatus"></div>
+
+        <form class="form-inline">
+          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Cookie Value Test</label>
+
+          <!-- <div class="custom-control custom-checkbox my-1 mr-sm-2">
+            <input type="checkbox" class="custom-control-input" id="customControlInline" name="darkmode">
+            <label class="custom-control-label" for="customControlInline">Check here</label>
+          </div> -->
+
+          <button type="submit" onClick="darkmode(1)" class="btn btn-primary my-1 mr-sm-2"">On setting</button>
+
+          <button type="submit" onClick="darkmode(2)" class="btn btn-primary my-1 mr-sm-2"">Off setting</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function darkmode(switchAction) {
+    switch (switchAction) {
+      case 1:
+        expiry = new Date();
+        expiry.setDate(expiry.getDate()+(1));
+
+        document.cookie = "darkmode=on; expires=" + expiry.toGMTString();
+      break;
+      case 2:
+        document.cookie = "darkmode=off;expires=Wed; 01 Jan 1970";
+      break;
+    }
+  };
+
+  if (document.cookie.indexOf("darkmode=on") == 0) {
+    document.getElementById("darkModeStatus").innerHTML = "Darkmode ON";
+  } else if (document.cookie.indexOf("darkmode=off") == 0 ) {
+    document.getElementById("darkModeStatus").innerHTML = "Darkmode OFF";
+  } else {
+    document.getElementById("darkModeStatus").innerHTML = "Darkmode value not set";
+  }
+</script>
