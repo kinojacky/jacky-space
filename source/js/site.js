@@ -4,31 +4,15 @@ $(document).ready(function() {
     $("#darkModeStatus").html("Activated");
     $("body").addClass("darkmode");
     $("#mainNav").addClass("darkmode");
+    $("#preloader").addClass("darkmode");
   } else if (document.cookie.indexOf("darkmode=off") == 0 ) {
     $("#darkModeStatus").html("Deactivated");
     $("body").removeClass("darkmode");
     $("#mainNav").removeClass("darkmode");
+    $("#preloader").removeClass("darkmode");
   } else {
     $("#darkModeStatus").html("Deactivated");
   }
-
-  // Preloader (if the #preloader div exists)
-  $(window).on('load', function () {
-    if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function () {
-        $(this).remove();
-      });
-    }
-
-    /* Background loading full-size images */
-    $('.gallery-item').each(function() {
-        var src = $(this).attr('href');
-        var img = document.createElement('img');
-
-        img.src = src;
-        $('#image-cache').append(img);
-    });
-  });
 });
 
 // Control nav-menu-bar open
@@ -62,6 +46,24 @@ function darkmode(switchAction) {
   "use strict";
 
   $('[data-toggle="tooltip"]').tooltip();
+
+  // Preloader (if the #preloader div exists)
+  $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }
+
+    /* Background loading full-size images */
+    $('.gallery-item').each(function() {
+        var src = $(this).attr('href');
+        var img = document.createElement('img');
+
+        img.src = src;
+        $('#image-cache').append(img);
+    });
+  });
 
   /* Animated Title */
   (function() {
