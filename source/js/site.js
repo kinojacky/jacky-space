@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Darkmode control
   if (document.cookie.indexOf("darkmode=on") == 0) {
-    $("#darkModeStatus").html("Activated");
+    $("#darkModeStatus").html("Activated").addClass("text-white");
     $("body, #mainNav, #preloader").addClass("darkmode");
   } else if (document.cookie.indexOf("darkmode=off") == 0 ) {
     $("#darkModeStatus").html("Deactivated");
