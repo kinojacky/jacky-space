@@ -2,14 +2,10 @@ $(document).ready(function() {
   // Darkmode control
   if (document.cookie.indexOf("darkmode=on") == 0) {
     $("#darkModeStatus").html("Activated");
-    $("body").addClass("darkmode");
-    $("#mainNav").addClass("darkmode");
-    $("#preloader").addClass("darkmode");
+    $("body, #mainNav, #preloader").addClass("darkmode");
   } else if (document.cookie.indexOf("darkmode=off") == 0 ) {
     $("#darkModeStatus").html("Deactivated");
-    $("body").removeClass("darkmode");
-    $("#mainNav").removeClass("darkmode");
-    $("#preloader").removeClass("darkmode");
+    $("body, #mainNav, #preloader").removeClass("darkmode");
   } else {
     $("#darkModeStatus").html("Deactivated");
   }

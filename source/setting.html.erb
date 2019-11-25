@@ -4,19 +4,33 @@ title: jacky.space | setting
 
 <section id="about">
   <div class="container-fluid">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-5">
       <div class="col-md-8">
         <h6 class="text-center">Darkmode Status</h6>
-        <h2 class="text-center text-monospace">
+        <h3 class="text-center text-monospace text-black-50">
           <span id="darkModeStatus"></span>
-        </h2>
-
-        <form class="form-inline justify-content-center">
-          <button type="submit" onClick="darkmode(1)" class="btn btn-primary my-1 mr-sm-2"">Darkmode ON</button>
-
-          <button type="submit" onClick="darkmode(2)" class="btn btn-primary my-1 mr-sm-2"">Darkmode OFF</button>
+        </h3>
+        <form>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-4 text-center text-sm-right">
+              <button type="submit" onClick="darkmode(1)" class="btn btn-success my-1" style="width: 10rem;">Darkmode ON</button>
+            </div>
+            <div class="col-12 col-sm-4 text-center text-sm-left">
+              <button type="submit" onClick="darkmode(2)" class="btn btn-secondary my-1" style="width: 10rem;">Darkmode OFF</button>
+            </div>
+          </div>
         </form>
+      </div>
+    </div>
 
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h6 class="text-center">Language</h6>
+        <div class="text-center">
+          <a href="javascript:void(0)" role="button" class="btn btn-success text-white disabled my-1" style="width: 10rem;">正體中文</a>
+          <br/>
+          <small>Coming soon...</small>
+        </div>
       </div>
     </div>
   </div>
