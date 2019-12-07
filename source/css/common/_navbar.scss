@@ -22,6 +22,11 @@
         color: #b9b9b9;
         transition: 0.3s;
 
+        &.active {
+          color: #ffffff;
+          font-weight: bold;
+        }
+
         &:hover,
         &:focus {
           color: #ffffff;
