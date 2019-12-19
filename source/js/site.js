@@ -1,13 +1,13 @@
 $(document).ready(function() {
   // Darkmode control
   if (document.cookie.indexOf("darkmode=on") == 0) {
-    $("#darkModeStatus").html("Activated").addClass("text-white");
+    $("#darkModeStatus").html("Activated"+"<br>"+"啟用").addClass("text-white");
     $("body, #mainNav, #preloader").addClass("darkmode");
   } else if (document.cookie.indexOf("darkmode=off") == 0 ) {
-    $("#darkModeStatus").html("Deactivated");
+    $("#darkModeStatus").html("Deactivated"+"<br>"+"解除");
     $("body, #mainNav, #preloader").removeClass("darkmode");
   } else {
-    $("#darkModeStatus").html("Deactivated");
+    $("#darkModeStatus").html("Deactivated"+"<br>"+"解除");
   }
 });
 
