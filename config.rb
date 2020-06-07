@@ -53,5 +53,5 @@ configure :build do
   activate :minify_javascript
 end
 
-set :js_dir, 'js'
-set :css_dir, 'css'
+set :js_dir, 'assets/js'
+set :css_dir, 'assets/css'
