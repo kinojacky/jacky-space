@@ -86,7 +86,7 @@ GEM
     http_parser.rb (0.8.1)
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
-    json (2.19.3)
+    json (2.19.9)
     kramdown (2.5.2)
       rexml (>= 3.4.4)
     listen (3.10.0)
@@ -135,9 +135,6 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.6.1)
-    middleman-sprockets (4.1.1)
-      middleman-core (~> 4.0)
-      sprockets (>= 3.0)
     minitest (6.0.3)
       drb (~> 2.0)
       prism (~> 1.5)
@@ -183,10 +180,6 @@ GEM
       ffi (~> 1.9)
     securerandom (0.4.1)
     servolux (0.13.0)
-    sprockets (4.2.2)
-      concurrent-ruby (~> 1.0)
-      logger
-      rack (>= 2.2.4, < 4)
     temple (0.10.4)
     thor (1.5.0)
     tilt (2.7.0)
@@ -217,7 +210,6 @@ DEPENDENCIES
   middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7)
   middleman-livereload
-  middleman-sprockets
   rack (>= 2.0.6)
   sass-embedded (~> 1.99)
   tzinfo-data
@@ -267,7 +259,7 @@ CHECKSUMS
   hashie (5.1.0) sha256=c266471896f323c446ea8207f8ffac985d2718df0a0ba98651a3057096ca3870
   http_parser.rb (0.8.1) sha256=9ae8df145b39aa5398b2f90090d651c67bd8e2ebfe4507c966579f641e11097a
   i18n (1.14.8) sha256=285778639134865c5e0f6269e0b818256017e8cde89993fdfcbfb64d088824a5
-  json (2.19.3) sha256=289b0bb53052a1fa8c34ab33cc750b659ba14a5c45f3fcf4b18762dc67c78646
+  json (2.19.9) sha256=9b9025b7cdddafa38d316eca0b2358488e42d417045c1b90d216a9fefe46b79a
   kramdown (2.5.2) sha256=1ba542204c66b6f9111ff00dcc26075b95b220b07f2905d8261740c82f7f02fa
   listen (3.10.0) sha256=c6e182db62143aeccc2e1960033bebe7445309c7272061979bb098d03760c9d2
   logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
@@ -277,7 +269,6 @@ CHECKSUMS
   middleman-cli (4.6.3) sha256=03deb5b893f748a5adeaf22ccc1452dfede2de25a4583bb451a0162857eb9974
   middleman-core (4.6.3) sha256=5cab1e1f16b00d26f541a4ca787427e1e0203c34f2d81471c1fae3bf1e7509a8
   middleman-livereload (3.5.0) sha256=8244d596851cac983719346bd13828b95cc049db9df8911e4d00f22b6fd6a762
-  middleman-sprockets (4.1.1) sha256=439e8376c74a509b5d527a22eb7fc0cc190afecb08cf7a75340e0df7c71a8972
   minitest (6.0.3) sha256=88ac8a1de36c00692420e7cb3cc11a0773bbcb126aee1c249f320160a7d11411
   padrino-helpers (0.16.1) sha256=dd897c7974c34b8642942e503474365b13336574f837b38d6309a8b67e94940b
   padrino-support (0.16.1) sha256=fe7fa6e781f978a94299b2e99bebc58ab71f64e9453c81ed21cd74fa15d550a8
@@ -304,7 +295,6 @@ CHECKSUMS
   sassc (2.4.0) sha256=4c60a2b0a3b36685c83b80d5789401c2f678c1652e3288315a1551d811d9f83e
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   servolux (0.13.0) sha256=1a33c45458f8061d8a989b19d3ad6e5cfad04881b3fe988508a90850a3961519
-  sprockets (4.2.2) sha256=761e5a49f1c288704763f73139763564c845a8f856d52fba013458f8af1b59b1
   temple (0.10.4) sha256=b7a1e94b6f09038ab0b6e4fe0126996055da2c38bec53a8a336f075748fff72c
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
   tilt (2.7.0) sha256=0d5b9ba69f6a36490c64b0eee9f6e9aad517e20dcc848800a06eb116f08c6ab3
