@@ -9,5 +9,5 @@ gem "rack", ">= 2.0.6"
 gem 'middleman-livereload'
 # gem 'middleman-sprockets'
 
-gem 'activesupport', '~> 8.1.3'
+gem 'activesupport', '~> 8.1.4'
 gem 'sass-embedded', '~> 1.99'
